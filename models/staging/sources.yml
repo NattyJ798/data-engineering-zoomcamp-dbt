@@ -1,0 +1,10 @@
+version: 2
+
+sources:
+  - name: raw_data
+    description: "Raw data sources for NYC taxi rides"
+    database: dtc-de-course-485716
+    schema: demo_data
+    tables:
+      - name: yellow_tripdata
+      - name: green_tripdata
