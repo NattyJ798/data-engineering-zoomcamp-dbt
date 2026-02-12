@@ -1,0 +1,1 @@
+select * from ({bigquery_source('raw_data', 'green_tripdata')})
