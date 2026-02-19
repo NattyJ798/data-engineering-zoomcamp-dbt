@@ -31,9 +31,9 @@ renamed as (
       cast(ehail_fee as numeric) as ehail_fee,
       cast(improvement_surcharge as numeric) as improvement_surcharge,
       cast(total_amount as numeric) as total_amount,
-      cast(payment_type as integer) as payment_type,
+      cast(payment_type as integer) as payment_type
   from tripdata
 )
 
-select * from renamed;
+select * from renamed
 
