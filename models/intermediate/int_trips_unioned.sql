@@ -11,7 +11,7 @@ yellow_data as (
 
 trips_unioned as (
     select * from green_data
-    union -- Select all rows from 'yellow_data
+    union 
     SELECT * FROM yellow_data
 )
 select * from trips_unioned

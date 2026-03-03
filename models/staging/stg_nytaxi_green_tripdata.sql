@@ -33,7 +33,11 @@ renamed as (
       cast(total_amount as numeric) as total_amount,
       cast(payment_type as integer) as payment_type
   from tripdata
+  limit 10;
 )
 
 select * from renamed
 
+{% if target.name == 'dev' %}
+where pickup_datetime >= '2019-01-01' and pickup_datetime < '2019-02-01'
+{% endif %}
